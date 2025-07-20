@@ -1,0 +1,65 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos de ambiente virtual
+.env/
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Arquivo de variáveis de ambiente
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Arquivos de cache e distribuição
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+*.manifest
+
+# Testes
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+
+# IDEs e editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Configurações de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos do mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Arquivos do Pyre
+.pyre/
+
+# Arquivos de lock (se não forem utilizados no controle de dependência)
+poetry.lock
+Pipfile.lock
+
+# Google Cloud credentials
+*.json
