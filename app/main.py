@@ -1,9 +1,14 @@
 import requests
 import pandas as pd
 from google.cloud import storage
+from dotenv import load_dotenv
 import os
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Users\Dell\ProjetosPython\terraform.json"
+load_dotenv()
+
+gcp_credentials = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = gcp_credentials
 
 resp = requests.get("https://dadosabertos.camara.leg.br/api/v2/deputados")
 data = resp.json()
